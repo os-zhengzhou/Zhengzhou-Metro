@@ -1,4 +1,5 @@
 const fs = require('fs');
+const path = require('path');
 const MarkdownIt = require('markdown-it');
 const md = new MarkdownIt();
 
@@ -84,6 +85,7 @@ function parseMarkdownToJSON(markdown) {
   const stationList = parseInlineList(tokens, 'h2', '站点列表')
 
   return {
+    id: parseValue(tokens, 'h2', '标识'),
     name: parseName(tokens),
     color: parseValue(tokens, 'h2', '颜色'),
     stationCount: stationList.length,
@@ -92,10 +94,40 @@ function parseMarkdownToJSON(markdown) {
   }
 }
 
-const markdownFile = './线路/3号线/3号线.md';
-const markdown = fs.readFileSync(markdownFile, 'utf8');
+// 指定要遍历的目录
+const directoryPath = path.join(__dirname, '线路');
+const lines = []
 
-const jsonResult = parseMarkdownToJSON(markdown);
-console.log(JSON.stringify(jsonResult, null, 2));
+const lineParentPath = '/lines';
+const parentDir = path.dirname('jsons' + lineParentPath);
+fs.mkdirSync(parentDir, { recursive: true });
 
-fs.writeFileSync('jsons/3号线.json', JSON.stringify(jsonResult, null, 2))
+// 递归函数来遍历目录和子目录中的所有文件
+function traverseDirectory(dir) {
+  const files = fs.readdirSync(dir)
+  files.forEach(file => {
+    const filePath = path.join(dir, file);
+
+    const stats = fs.statSync(filePath)
+    if (stats.isDirectory()) {
+      // 如果是目录，递归遍历该子目录
+      traverseDirectory(filePath);
+    } else if (path.extname(file) === '.md') {
+      // 如果是 .md 文件，读取文件内容
+      const markdown = fs.readFileSync(filePath, 'utf8')
+      const line = parseMarkdownToJSON(markdown)
+      const jsonFilePath = lineParentPath + `/${line.id + '.json'}`;
+      fs.writeFileSync('jsons' + jsonFilePath, JSON.stringify(line), null, 2)
+      lines.push({
+        id: line.id,
+        name: line.name,
+        path: jsonFilePath
+      })
+      console.log(`Create new json file: ${jsonFilePath}`);
+    }
+  });
+}
+
+// 开始遍历目录
+traverseDirectory(directoryPath);
+fs.writeFileSync('jsons' + lineParentPath + '/lines.json', JSON.stringify(lines), null, 2)
