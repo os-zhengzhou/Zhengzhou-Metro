@@ -1,0 +1,25 @@
+{
+  "name": "zhengzhou-metro",
+  "version": "1.0.0",
+  "description": "郑州地铁信息汇总",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/os-zhengzhou/Zhengzhou-Metro.git"
+  },
+  "keywords": [
+    "zhengzhou",
+    "json",
+    "api"
+  ],
+  "author": "os-zhengzhou",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/os-zhengzhou/Zhengzhou-Metro/issues"
+  },
+  "homepage": "https://github.com/os-zhengzhou/Zhengzhou-Metro#readme",
+  "dependencies": {
+    "markdown-it": "^14.1.0",
+    "markdown-it-container": "^4.0.0"
+  }
+}
