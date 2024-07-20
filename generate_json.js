@@ -87,7 +87,12 @@ function parseMarkdownToJSON(markdown) {
   return {
     id: parseValue(tokens, 'h2', '标识'),
     name: parseName(tokens),
-    color: parseValue(tokens, 'h2', '颜色'),
+    color: parseValue(tokens, 'h2', '标志色'),
+    openingDate: parseValue(tokens, 'h2', '开通日期'),
+    length: parseValue(tokens, 'h2', '线路长度'),
+    trainComposition: parseValue(tokens, 'h2', '列车编组'),
+    topSpeed: parseValue(tokens, 'h2', '最高时速'),
+    startingFare: parseValue(tokens, 'h2', '起步票价'),
     stationCount: stationList.length,
     stationList,
     runTime: parseInlineList(tokens, 'h2', '运行时间', parseRunTime),
@@ -97,6 +102,7 @@ function parseMarkdownToJSON(markdown) {
 // 指定要遍历的目录
 const directoryPath = path.join(__dirname, '线路');
 const lines = []
+const stations = []
 
 const lineParentPath = '/lines';
 const parentDir = path.dirname('jsons' + lineParentPath);
