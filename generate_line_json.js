@@ -88,6 +88,7 @@ const parseMarkdownToJSON = (markdown) => {
     id: parseValue(tokens, 'h2', '标识'),
     name: parseName(tokens),
     color: parseValue(tokens, 'h2', '标志色'),
+    operationalStatus: parseValue(tokens, 'h2', '运营状态'),
     openingDate: parseValue(tokens, 'h2', '开通日期'),
     length: parseValue(tokens, 'h2', '线路长度'),
     trainComposition: parseValue(tokens, 'h2', '列车编组'),
@@ -99,9 +100,41 @@ const parseMarkdownToJSON = (markdown) => {
   }
 }
 
+// 自定义排序函数
+const customSort = (a, b) => {
+  if (a === '城郊线') {
+    a = '9号线'
+  }
+  if (b === '城郊线') {
+    b = '9号线'
+  }
+
+  const numA = parseInt(a.match(/\d+/));
+  const numB = parseInt(b.match(/\d+/));
+
+  // 如果a和b都包含数字，按数字排序
+  if (!isNaN(numA) && !isNaN(numB)) {
+    return numA - numB;
+  }
+
+  // 如果只有a包含数字，a排在前
+  if (!isNaN(numA)) {
+    return -1;
+  }
+
+  // 如果只有b包含数字，b排在前
+  if (!isNaN(numB)) {
+    return 1;
+  }
+
+  // 如果都不包含数字，按原顺序
+  return 0;
+}
+
 // 递归函数来遍历目录和子目录中的所有文件
 const traverseDirectory = (lines, dir, jsonDir, jsonParentPath) => {
-  const files = fs.readdirSync(dir)
+  let files = fs.readdirSync(dir)
+  files = files.sort(customSort); // 对文件名数组进行排序
   files.forEach(file => {
     const filePath = path.join(dir, file);
 
@@ -117,7 +150,9 @@ const traverseDirectory = (lines, dir, jsonDir, jsonParentPath) => {
       fs.writeFileSync(jsonDir + jsonFilePath, JSON.stringify(line), null, 2)
       lines.push({
         id: line.id,
+        color: line.color,
         name: line.name,
+        operationalStatus: line.operationalStatus,
         path: jsonFilePath
       })
       console.log(`Create new json file: ${jsonFilePath}`);

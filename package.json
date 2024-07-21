@@ -2,7 +2,10 @@
   "name": "zhengzhou-metro",
   "version": "1.0.0",
   "description": "郑州地铁信息汇总",
-  "main": "index.js",
+  "main": "generate_json.js",
+  "scripts": {
+    "build": "node generate_json.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/os-zhengzhou/Zhengzhou-Metro.git"

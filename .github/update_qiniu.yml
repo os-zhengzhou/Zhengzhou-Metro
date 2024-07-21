@@ -1,0 +1,30 @@
+name: Parse Markdown to JSON and Upload to Qiniu
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Run script to parse Markdown and upload JSON
+      env:
+        QINIU_ACCESS_KEY: ${{ secrets.QINIU_ACCESS_KEY }}
+        QINIU_SECRET_KEY: ${{ secrets.QINIU_SECRET_KEY }}
+        QINIU_BUCKET_NAME: ${{ secrets.QINIU_BUCKET_NAME }}
+        QINIU_UPLOAD_PATH: ${{ secrets.QINIU_UPLOAD_PATH }}
+      run: node script.js
