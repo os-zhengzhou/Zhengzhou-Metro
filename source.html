@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>站点信息 郑州地铁-郑州地铁集团有限公司运营分公司</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="">
+    <meta name="author" content="gai871013">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit"> <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp" /> <!-- HTML5 shim for IE8 support of HTML5 elements -->
+    <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <![endif]-->
+    <link rel="icon" href="/themes/zzmetro/Public/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/themes/zzmetro/Public/images/favicon.ico" type="image/x-icon">
+    <link href="/themes/zzmetro/Public/simpleboot/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"
+        type="text/css">
+    <!--[if IE 7]> <link rel="stylesheet" href="/themes/zzmetro/Public/simpleboot/font-awesome/4.4.0/css/font-awesome-ie7.min.css"> <![endif]-->
+    <link href="/themes/zzmetro/Public/css/css.css?v=20220601.1445" rel="stylesheet">
+    <link href="/themes/zzmetro/Public/css/style.css" rel="stylesheet">
+    <style>
+        .Line_ck li span.w170 {
+            width: 120px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head_Bgad" id="head" style="z-index:-1;"></div>
+    <div class="head_bg">
+        <div class="main mbt10"> <a href="/"><img src="/themes/zzmetro/Public/images/logo.png" class="logo101"></a>
+            <div class="search01">
+                <div class="language">
+                    <div class="language"> <a target="_blank" rel="nofollow" href="https://www.zzmetro.cn/">公司网站</a>
+                        <!--                    <a target="_blank" rel="nofollow" href="http://portal.zzmetro.com/">内部网站</a>-->
+                        <a id="chinese" data-default="简体" data-changed="繁體" href="javascript:">繁體</a> <a id="accessible"
+                            href="javascript:">无障碍阅读</a> </div>
+                </div>
+                <div class="search_s">
+                    <form action="/lines/search/index"> <input type="text" name="keyword" value=""
+                            placeholder="输入关键词搜索"> <input type="submit" value="" class="search_submit"> </form>
+                </div>
+            </div>
+        </div>
+        <div class="nav01">
+            <ul id="main-menu" class="nav">
+                <li class='icon0 icon01 ' id='menu-item-1'><a href='/news'><span>新闻公告</span></a>
+                    <ul class='dropdown-menu'>
+                        <li class='' id='menu-item-6'><a href='/list/3' target=''>通知公告</a></li>
+                        <li class='' id='menu-item-7'><a href='/list/4' target=''>运营资讯</a></li>
+                        <li class='' id='menu-item-9'><a href='/list/6' target=''>采购信息</a></li>
+                    </ul>
+                </li>
+                <li class='icon0 icon02 ' id='menu-item-2'><a href='/page/6'><span>乘客服务</span></a>
+                    <ul class='dropdown-menu'>
+                        <li class='' id='menu-item-11'><a href='/page/6' target=''>乘车须知</a></li>
+                        <li class='' id='menu-item-25'><a href='/list/19' target=''>失物招领</a></li>
+                        <li class='' id='menu-item-27'><a href='/guestbook/guestbook/addmsg/type/2' target=''>预约服务</a>
+                        </li>
+                        <li class='' id='menu-item-14'><a href='/list/2' target=''>政策法规</a></li>
+                        <li class='' id='menu-item-50'><a href='/page/2202' target=''>服务承诺</a></li>
+                    </ul>
+                </li>
+                <li class='icon0 icon03 ' id='menu-item-3'><a href='/list/12'><span>地铁票务</span></a>
+                    <ul class='dropdown-menu'>
+                        <li class='' id='menu-item-48'><a href='/page/2199' target=''>车票使用规则</a></li>
+                        <li class='' id='menu-item-15'><a href='/list/12' target=''>票卡种类</a></li>
+                        <li class='' id='menu-item-22'><a href='/lines/query/ticket' target=''>票价查询</a></li>
+                    </ul>
+                </li>
+                <li class='icon0 icon04 ' id='menu-item-4'><a href='/lines/query/line'><span>运营线路</span></a>
+                    <ul class='dropdown-menu'>
+                        <li class='' id='menu-item-19'><a href='/lines/query/line' target=''>线路信息</a></li>
+                        <li class='' id='menu-item-20'><a href='/lines/query/station' target=''>站点信息</a></li>
+                        <li class='' id='menu-item-21'><a href='/lines/query/operating_hours' target=''>运营时间</a></li>
+                    </ul>
+                </li>
+                <li class='icon0 icon05 ' id='menu-item-5'><a href='/page/1'><span>联系我们</span></a>
+                    <ul class='dropdown-menu'>
+                        <li class='' id='menu-item-23'><a href='/page/1' target=''>关于我们</a></li>
+                        <li class='' id='menu-item-44'><a href='/list/36' target=''>常见问题</a></li>
+                        <li class='' id='menu-item-24'><a href='/guestbook/guestbook/index/type/1' target=''>互动交流</a>
+                        </li>
+                        <li class='' id='menu-item-26'><a href='/guestbook/guestbook/volunteer' target=''>地铁志愿者</a></li>
+                        <li class='' id='menu-item-42'><a href='/page/apps' target=''>地铁e+</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="content_bigBox">
+        <div class="small_nav_box">
+            <div class="small_nav">
+                <ul>
+                    <li><a href="/">首页</a><span class="divider">&nbsp;/&nbsp;</span></li>
+                    <li>运营线路<span class="divider">&nbsp;/&nbsp;</span></li>
+                    <li class="active">站点信息</li>
+                    <div class="clearfix"></div>
+                </ul>
+            </div>
+        </div>
+        <div class="content_box mbt20"> <!-- 站点查询 -->
+            <div class="site_div">
+                <div class="site_search">
+                    <form action="/lines/query/station" method="get">
+                        <div class="site_search_div"> <input type="text" name="keyword" value="" placeholder="站名、站编号">
+                        </div> <button type="submit" class="button">查询</button>
+                    </form>
+                </div>
+                <div class="siteul_div">
+                    <div class="site_left_jt"></div>
+                    <div class="site_ul_div">
+                        <ul class="site_ul">
+                            <li data-class="line-color" data-line="1" class="color01"><img
+                                    src="/data/upload/20190827/5d649fbfcd6e1.png">
+                                <p>1号线</p>
+                            </li>
+                            <li data-class="line-color" data-line="2" class="color02"><img
+                                    src="/data/upload/20190827/5d649fcc98315.png">
+                                <p>2号线</p>
+                            </li>
+                            <li data-class="line-color" data-line="3" class="color03"><img
+                                    src="/data/upload/20201224/5fe416434e9e6.png">
+                                <p>3号线</p>
+                            </li>
+                            <li data-class="line-color" data-line="4" class="color04"><img
+                                    src="/data/upload/20201224/5fe4164dcf611.png">
+                                <p>4号线</p>
+                            </li>
+                            <li data-class="line-color" data-line="5" class="color05"><img
+                                    src="/data/upload/20190827/5d649fda43775.png">
+                                <p>5号线</p>
+                            </li>
+                            <li data-class="line-color" data-line="6" class="color06"><img
+                                    src="/data/upload/20190515/5cdc082064741.png">
+                                <p>6号线</p>
+                            </li>
+                            <li data-class="line-color" data-line="9" class="color09"><img
+                                    src="/data/upload/20190827/5d649fe52ab82.png">
+                                <p>城郊线</p>
+                            </li>
+                            <li data-class="line-color" data-line="10" class="color10"><img
+                                    src="/data/upload/20161102/58195347947f2.png">
+                                <p>10号线</p>
+                            </li>
+                            <li data-class="line-color" data-line="12" class="color12"><img
+                                    src="/data/upload/20161102/58195347947f1.png">
+                                <p>12号线</p>
+                            </li>
+                            <li data-class="line-color" data-line="14" class="color14"><img
+                                    src="/data/upload/20190827/5d649ff4c9c3f.png">
+                                <p>14号线</p>
+                            </li>
+                            <li data-class="line-color" data-line="17" class="color17"><img
+                                    src="/data/upload/20201224/5fe416434e9e6.png">
+                                <p>郑许线</p>
+                            </li>
+                            <li data-class="line-color" data-line="7" class="color07"><img
+                                    src="/data/upload/20190515/5cdc0829d54fd.png">
+                                <p>7号线</p>
+                            </li>
+                            <li data-class="line-color" data-line="8" class="color08"><img
+                                    src="/data/upload/20161027/5811de163efda.png">
+                                <p>8号线</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="site_right_jt"></div>
+                </div>
+                <div class="Line_sites_div line-1">
+                    <p></p>
+                    <p style="display: none;">1号线 共计30站 / 开往<em> 河南大学新区站 </em>方向 首班车：<em> 06:00 </em>
+                        末班车：<em>22:00</em>
+                        / 开往<em> 河南工业大学站 </em>方向 首班车：<em>06:00</em> 末班车：<em>22:00</em> </p>
+                    <div data-class="Line_sites_line" class="Line_sites_line01"></div>
+                    <ul data-class="Line_sites_ul" class="Line_sites_ul01">
+                        <li> <a href="/lines/query/station/zid/10114#station"><em>1</em><span>河南工业大学站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10115#station"><em>2</em><span>郑大科技园站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10116#station"><em>3</em><span>郑州大学站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10117#station"><em>4</em><span>梧桐街站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10118#station"><em>5</em><span>兰寨站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10119#station"><em>6</em><span>铁炉站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10120#station"><em>7</em><span>市民中心站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10121#station"><em>8</em><span>西流湖站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10122#station"><em>9</em><span>西三环站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10123#station"><em>10</em><span>秦岭路站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10124#station"><em>11</em><span>五一公园站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10125#station"><em>12</em><span>碧沙岗站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10126#station"><em>13</em><span>绿城广场站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10127#station"><em>14</em><span>医学院站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10128#station"><em>15</em><span>郑州火车站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10129#station"><em>16</em><span>二七广场站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10130#station"><em>17</em><span>人民路站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10131#station"><em>18</em><span>紫荆山站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10132#station"><em>19</em><span>燕庄站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10133#station"><em>20</em><span>民航路站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10134#station"><em>21</em><span>会展中心站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10135#station"><em>22</em><span>黄河南路站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10136#station"><em>23</em><span>农业南路站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10137#station"><em>24</em><span>东风南路站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10138#station"><em>25</em><span>郑州东站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10139#station"><em>26</em><span>博学路站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10140#station"><em>27</em><span>市体育中心站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10141#station"><em>28</em><span>龙子湖站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10142#station"><em>29</em><span>文苑北路站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10143#station"><em>30</em><span>河南大学新区站</span></a> </li>
+                    </ul>
+                    <div class="site_cont_left_jt"></div>
+                    <div class="site_cont_right_jt"></div>
+                </div>
+                <div class="Line_sites_div line-2">
+                    <p></p>
+                    <p style="display: none;">2号线 共计22站 / 开往<em> 南四环站 </em>方向 首班车：<em> 06:00:00 </em>
+                        末班车：<em>22:00:00</em>
+                        / 开往<em> 贾河站 </em>方向 首班车：<em>06:00:00</em> 末班车：<em>22:00:00</em> </p>
+                    <div data-class="Line_sites_line" class="Line_sites_line02"></div>
+                    <ul data-class="Line_sites_ul" class="Line_sites_ul02">
+                        <li> <a href="/lines/query/station/zid/10215#station"><em>1</em><span>贾河站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10216#station"><em>2</em><span>惠济区政府站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10217#station"><em>3</em><span>毛庄站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10218#station"><em>4</em><span>黄河迎宾馆站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10219#station"><em>5</em><span>金洼站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10220#station"><em>6</em><span>金达路站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10221#station"><em>7</em><span>刘庄站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10222#station"><em>8</em><span>柳林站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10223#station"><em>9</em><span>沙门站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10224#station"><em>10</em><span>北三环站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10225#station"><em>11</em><span>东风路站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10226#station"><em>12</em><span>关虎屯站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10227#station"><em>13</em><span>黄河路站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10228#station"><em>14</em><span>紫荆山站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10229#station"><em>15</em><span>东大街站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10230#station"><em>16</em><span>陇海东路站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10231#station"><em>17</em><span>二里岗站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10232#station"><em>18</em><span>南五里堡站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10233#station"><em>19</em><span>花寨站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10234#station"><em>20</em><span>南三环站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10235#station"><em>21</em><span>站马屯站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10236#station"><em>22</em><span>南四环站</span></a> </li>
+                    </ul>
+                    <div class="site_cont_left_jt"></div>
+                    <div class="site_cont_right_jt"></div>
+                </div>
+                <div class="Line_sites_div line-3">
+                    <div class="Line_sites_tex">
+                        详情请咨询3号线服务热线：0371-89820000
+                    </div>
+                </div>
+                <div class="Line_sites_div line-4">
+                    <p></p>
+                    <p style="display: none;">4号线 共计27站 / 开往<em> 郎庄站 </em>方向 首班车：<em> 06:00:00 </em>
+                        末班车：<em>06:00:00</em>
+                        / 开往<em> 老鸦陈站 </em>方向 首班车：<em>22:00:00</em> 末班车：<em>22:00:00</em> </p>
+                    <div data-class="Line_sites_line" class="Line_sites_line04"></div>
+                    <ul data-class="Line_sites_ul" class="Line_sites_ul04">
+                        <li> <a href="/lines/query/station/zid/10421#station"><em>1</em><span>老鸦陈站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10422#station"><em>2</em><span>省体育中心站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10423#station"><em>3</em><span>北二十里铺站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10424#station"><em>4</em><span>丰庆路站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10425#station"><em>5</em><span>张家村站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10426#station"><em>6</em><span>陈寨东站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10427#station"><em>7</em><span>沙门站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10428#station"><em>8</em><span>杨君刘站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10429#station"><em>9</em><span>森林公园北站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10430#station"><em>10</em><span>清华附中站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10431#station"><em>11</em><span>龙湖中环北站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10432#station"><em>12</em><span>龙湖北站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10433#station"><em>13</em><span>金融岛北站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10434#station"><em>14</em><span>金融岛南站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10435#station"><em>15</em><span>龙湖南站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10436#station"><em>16</em><span>龙湖中环南站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10437#station"><em>17</em><span>农业东路站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10438#station"><em>18</em><span>中央商务区站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10439#station"><em>19</em><span>会展中心站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10440#station"><em>20</em><span>商鼎路站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10441#station"><em>21</em><span>东十里铺站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10442#station"><em>22</em><span>货站街站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10443#station"><em>23</em><span>七里河站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10444#station"><em>24</em><span>果树所站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10445#station"><em>25</em><span>金岱站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10446#station"><em>26</em><span>姚庄站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10447#station"><em>27</em><span>郎庄站</span></a> </li>
+                    </ul>
+                    <div class="site_cont_left_jt"></div>
+                    <div class="site_cont_right_jt"></div>
+                </div>
+                <div class="Line_sites_div line-5">
+                    <p></p>
+                    <p style="display: none;">5号线 共计32站 / 开往<em> （内环）月季公园-黄河路-郑州东站 </em>方向 首班车：<em> 06:00 </em>
+                        末班车：<em>22:00</em>
+                        / 开往<em> （外环）月季公园-南五里堡-郑州东站 </em>方向 首班车：<em>06:00</em> 末班车：<em>22:00</em> </p>
+                    <div data-class="Line_sites_line" class="Line_sites_line05"></div>
+                    <ul data-class="Line_sites_ul" class="Line_sites_ul05">
+                        <li> <a href="/lines/query/station/zid/10501#station"><em>1</em><span>月季公园站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10502#station"><em>2</em><span>沙口路站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10503#station"><em>3</em><span>海滩寺站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10504#station"><em>4</em><span>郑州人民医院站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10505#station"><em>5</em><span>黄河路站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10506#station"><em>6</em><span>省人民医院站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10507#station"><em>7</em><span>姚砦站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10508#station"><em>8</em><span>众意西路站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10509#station"><em>9</em><span>中央商务区站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10510#station"><em>10</em><span>儿童医院站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10511#station"><em>11</em><span>祭城站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10512#station"><em>12</em><span>金水东路站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10513#station"><em>13</em><span>郑州东站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10514#station"><em>14</em><span>康宁街站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10515#station"><em>15</em><span>省骨科医院站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10516#station"><em>16</em><span>经北二路站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10517#station"><em>17</em><span>经开中心广场站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10518#station"><em>18</em><span>福塔东站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10519#station"><em>19</em><span>中原福塔站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10520#station"><em>20</em><span>七里河站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10521#station"><em>21</em><span>航海广场站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10522#station"><em>22</em><span>城东南路站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10523#station"><em>23</em><span>南五里堡站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10524#station"><em>24</em><span>冯庄站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10525#station"><em>25</em><span>京广南路站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10526#station"><em>26</em><span>市第二人民医院站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10527#station"><em>27</em><span>齐礼阎站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10528#station"><em>28</em><span>后河芦站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10529#station"><em>29</em><span>桐淮站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10530#station"><em>30</em><span>陇海西路站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10531#station"><em>31</em><span>市中心医院站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10532#station"><em>32</em><span>五一公园站</span></a> </li>
+                    </ul>
+                    <div class="site_cont_left_jt"></div>
+                    <div class="site_cont_right_jt"></div>
+                </div>
+                <div class="Line_sites_div line-6">
+                    <p></p>
+                    <p style="display: none;">6号线 共计10站 / 开往<em> 贾峪站 </em>方向 首班车：<em> 0:00 </em>
+                        末班车：<em>0:00</em>
+                        / 开往<em> 常庄站 </em>方向 首班车：<em>0:00</em> 末班车：<em>0:00</em> </p>
+                    <div data-class="Line_sites_line" class="Line_sites_line06"></div>
+                    <ul data-class="Line_sites_ul" class="Line_sites_ul06">
+                        <li> <a href="/lines/query/station/zid/10640#station"><em>1</em><span>常庄站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10641#station"><em>2</em><span>奥体中心站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10642#station"><em>3</em><span>奥体中心西站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10643#station"><em>4</em><span>金桢路站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10644#station"><em>5</em><span>河南建院站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10645#station"><em>6</em><span>马寨站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10646#station"><em>7</em><span>安宁路站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10647#station"><em>8</em><span>洞林寺站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10648#station"><em>9</em><span>洞林湖站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10649#station"><em>10</em><span>贾峪站</span></a> </li>
+                    </ul>
+                    <div class="site_cont_left_jt"></div>
+                    <div class="site_cont_right_jt"></div>
+                </div>
+                <div class="Line_sites_div line-9">
+                    <p></p>
+                    <p style="display: none;">城郊线 共计19站 / 开往<em> 郑州航空港站 </em>方向 首班车：<em> 06:00:00 </em>
+                        末班车：<em>22:04:33</em>
+                        / 开往<em> 南四环站 </em>方向 首班车：<em>06:00:00</em> 末班车：<em>22:00:00</em> </p>
+                    <div data-class="Line_sites_line" class="Line_sites_line09"></div>
+                    <ul data-class="Line_sites_ul" class="Line_sites_ul09">
+                        <li> <a href="/lines/query/station/zid/10936#station"><em>1</em><span>南四环站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10937#station"><em>2</em><span>十八里河站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10938#station"><em>3</em><span>沙窝李站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10939#station"><em>4</em><span>双湖大道站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10940#station"><em>5</em><span>小乔站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10941#station"><em>6</em><span>华南城西站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10942#station"><em>7</em><span>华南城站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10943#station"><em>8</em><span>华南城东站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10944#station"><em>9</em><span>孟庄站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10945#station"><em>10</em><span>港区北站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10946#station"><em>11</em><span>康平湖站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10947#station"><em>12</em><span>兰河公园站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10948#station"><em>13</em><span>恩平湖站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10949#station"><em>14</em><span>综合保税区站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10950#station"><em>15</em><span>新郑机场站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10951#station"><em>16</em><span>3号航站楼站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10952#station"><em>17</em><span>机场东站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10953#station"><em>18</em><span>港区会展站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/10954#station"><em>19</em><span>郑州航空港站</span></a> </li>
+                    </ul>
+                    <div class="site_cont_left_jt"></div>
+                    <div class="site_cont_right_jt"></div>
+                </div>
+                <div class="Line_sites_div line-10">
+                    <p></p>
+                    <p style="display: none;">10号线 共计12站 / 开往<em> 郑州西站 </em>方向 首班车：<em> 06:00:00 </em>
+                        末班车：<em>22:00:00</em>
+                        / 开往<em> 郑州火车站 </em>方向 首班车：<em>06:00:00</em> 末班车：<em>22:35:00</em> </p>
+                    <div data-class="Line_sites_line" class="Line_sites_line10"></div>
+                    <ul data-class="Line_sites_ul" class="Line_sites_ul10">
+                        <li> <a href="/lines/query/station/zid/11041#station"><em>1</em><span>郑州西站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/11042#station"><em>2</em><span>李商隐公园站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/11043#station"><em>3</em><span>庙王站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/11044#station"><em>4</em><span>柳湖站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/11045#station"><em>5</em><span>市委党校站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/11046#station"><em>6</em><span>郑州一中站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/11047#station"><em>7</em><span>西流湖公园南站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/11048#station"><em>8</em><span>二砂站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/11049#station"><em>9</em><span>市中心医院站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/11050#station"><em>10</em><span>绿城广场站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/11051#station"><em>11</em><span>医学院站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/11052#station"><em>12</em><span>郑州火车站</span></a> </li>
+                    </ul>
+                    <div class="site_cont_left_jt"></div>
+                    <div class="site_cont_right_jt"></div>
+                </div>
+                <div class="Line_sites_div line-12">
+                    <p></p>
+                    <p style="display: none;">12号线 共计11站 / 开往<em> 梁湖站 </em>方向 首班车：<em> 06:00:00 </em>
+                        末班车：<em>23:00:00</em>
+                        / 开往<em> 龙子湖东站 </em>方向 首班车：<em>06:00:00</em> 末班车：<em>23:30:00</em> </p>
+                    <div data-class="Line_sites_line" class="Line_sites_line12"></div>
+                    <ul data-class="Line_sites_ul" class="Line_sites_ul12">
+                        <li> <a href="/lines/query/station/zid/11221#station"><em>1</em><span>梁湖站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/11223#station"><em>2</em><span>福塔东站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/11225#station"><em>3</em><span>经北五路站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/11227#station"><em>4</em><span>西周站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/11229#station"><em>5</em><span>黄河南路站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/11231#station"><em>6</em><span>儿童医院站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/11233#station"><em>7</em><span>东风东路站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/11235#station"><em>8</em><span>高铁公园站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/11237#station"><em>9</em><span>龙子湖西站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/11239#station"><em>10</em><span>龙子湖站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/11241#station"><em>11</em><span>龙子湖东站</span></a> </li>
+                    </ul>
+                    <div class="site_cont_left_jt"></div>
+                    <div class="site_cont_right_jt"></div>
+                </div>
+                <div class="Line_sites_div line-14">
+                    <p></p>
+                    <p style="display: none;">14号线 共计3站 / 开往<em> 铁炉站 </em>方向 首班车：<em> 06:00:00 </em>
+                        末班车：<em>22:00:00</em>
+                        / 开往<em> 莲湖站 </em>方向 首班车：<em>06:05:00</em> 末班车：<em>22:05:00</em> </p>
+                    <div data-class="Line_sites_line" class="Line_sites_line14"></div>
+                    <ul data-class="Line_sites_ul" class="Line_sites_ul14">
+                        <li> <a href="/lines/query/station/zid/11431#station"><em>1</em><span>须水站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/11432#station"><em>2</em><span>铁炉站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/11433#station"><em>3</em><span>市民大道站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/11434#station"><em>4</em><span>市委党校站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/11435#station"><em>5</em><span>奥体中心站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/11436#station"><em>6</em><span>莲湖站</span></a> </li>
+                    </ul>
+                    <div class="site_cont_left_jt"></div>
+                    <div class="site_cont_right_jt"></div>
+                </div>
+                <div class="Line_sites_div line-17">
+                    <p></p>
+                    <p style="display: none;">郑许线 共计27站 / 开往<em> 许昌东站 </em>方向 首班车：<em> 06:00:00 </em>
+                        末班车：<em>06:00:00</em>
+                        / 开往<em> 长安路北站 </em>方向 首班车：<em>22:00:00</em> 末班车：<em>22:00:00</em> </p>
+                    <div data-class="Line_sites_line" class="Line_sites_line17"></div>
+                    <ul data-class="Line_sites_ul" class="Line_sites_ul17">
+                        <li> <a href="/lines/query/station/zid/11721#station"><em>1</em><span>长安路北站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/11723#station"><em>2</em><span>港区北站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/11725#station"><em>3</em><span>文体中心站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/11727#station"><em>4</em><span>枣园站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/11729#station"><em>5</em><span>翱翔路站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/11731#station"><em>6</em><span>长安路南站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/11733#station"><em>7</em><span>新郑机场站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/11735#station"><em>8</em><span>遵大路站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/11737#station"><em>9</em><span>苑陵故城西站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/11739#station"><em>10</em><span>洵美路站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/11741#station"><em>11</em><span>龙王站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/11743#station"><em>12</em><span>龙王南站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/11745#station"><em>13</em><span>双鹤湖北站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/11747#station"><em>14</em><span>双鹤湖站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/11749#station"><em>15</em><span>双鹤湖南站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/11751#station"><em>16</em><span>八千站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/11753#station"><em>17</em><span>双庙李站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/11755#station"><em>18</em><span>大周站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/11757#station"><em>19</em><span>颍川路站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/11759#station"><em>20</em><span>葛天源站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/11761#station"><em>21</em><span>永和路站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/11763#station"><em>22</em><span>农大路站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/11765#station"><em>23</em><span>体育中心站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/11767#station"><em>24</em><span>电气谷站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/11769#station"><em>25</em><span>芙蓉湖站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/11771#station"><em>26</em><span>鹿鸣湖站</span></a> </li>
+                        <li> <a href="/lines/query/station/zid/11773#station"><em>27</em><span>许昌东站</span></a> </li>
+                    </ul>
+                    <div class="site_cont_left_jt"></div>
+                    <div class="site_cont_right_jt"></div>
+                </div>
+                <div class="Line_sites_div line-7">
+                    <div class="Line_sites_tex">7号线暂未开通</div>
+                </div>
+                <div class="Line_sites_div line-8">
+                    <div class="Line_sites_tex">8号线暂未开通</div>
+                </div>
+            </div> <!-- 具体路线站点 -->
+        </div>
+        <div class="Line_sites_bigBox" style="position:relative;"> <span id="station"
+                style="position:absolute; top:-46px; width:0; height:0;"></span> <!-- 站点信息 -->
+            <div class="main">
+                <div class="Line_Site_infor">
+                    <h1>河南工业大学站</h1>
+                </div>
+                <div class="Line_Site_cont">
+                    <h1>运营时刻表</h1>
+                    <table width="100%" cellpadding="0">
+                        <tr>
+                            <td>线路(方向)</td>
+                            <td width="10%">班次</td>
+                            <td width="20%">工作日</td>
+                            <td width="20%">节假日</td>
+                        </tr>
+                        <tr>
+                            <td width="35%" rowspan="2">
+                                1号线 （河南工业大学站 → 河南大学新区站【下行】） </td>
+                            <td>首班</td>
+                            <td>
+                                6:00 </td>
+                            <td>
+                                6:00 </td>
+                        </tr>
+                        <tr>
+                            <td>末班</td>
+                            <td>
+                                23:00 </td>
+                            <td>
+                                23:26 </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">
+                                1号线 （河南大学新区站 → 河南工业大学站【上行】） </td>
+                            <td>首班</td>
+                            <td>
+                                —— </td>
+                            <td>
+                                —— </td>
+                        </tr>
+                        <tr>
+                            <td>末班</td>
+                            <td>
+                                —— </td>
+                            <td>
+                                —— </td>
+                        </tr>
+                    </table>
+                    <style>
+                        table td {
+                            padding: 5px 0 5px 5px;
+                        }
+                    </style>
+                </div>
+                <div class="Line_Site_sheshi_div">
+                    <ul class="Line_Site_sheshi" id="Line_Site_table">
+                        <li class="on">站外信息</li>
+                        <li>出入口信息</li>
+                        <li>站内服务设施信息</li>
+                    </ul> <!-- 站外地图 -->
+                    <div class="Line_add_sites_div"> <img src="/data/upload/20170113/58784b2902365.jpg"
+                            class="Line_Site_cont_img">
+                        <div class="Line_Site_cont" id="panorama"></div>
+                    </div> <!-- 站内地图 -->
+                    <div class="Line_add_sites_div" style="display: none;">
+                        <div class="Line_Site_cont"> </div>
+                        <ul class="Line_ck">
+                            <li>
+                                <div> <span class="pad01">A</span>
+                                    <p>街道：<em>莲花街东南
+                                        </em></p>
+                                    <p>地标:<em>翰林国际
+                                        </em></p>
+                                    <p>公交:<em>B27路、B2路、B35路、B66路、S150路、Y20路
+                                        </em></p>
+                                </div>
+                            </li>
+                            <li>
+                                <div> <span class="pad02">E</span>
+                                    <p>街道：<em>莲花街西南
+                                        </em></p>
+                                    <p>地标:<em>郑州大学</em></p>
+                                    <p>公交:<em>无
+                                        </em></p>
+                                </div>
+                            </li>
+                            <li>
+                                <div> <span class="pad03">F</span>
+                                    <p>街道：<em>莲花街西北
+                                        </em></p>
+                                    <p>地标:<em>河南工业大学
+                                        </em></p>
+                                    <p>公交:<em>B27路、B2路、B35路、B66路、Y20路、45路、S152、271路
+                                        </em></p>
+                                </div>
+                            </li>
+                            <div class="clearfix"></div>
+                            <li>
+                                <div> <span class="pad04">G</span>
+                                    <p>街道：<em>莲花街东北
+                                        </em></p>
+                                    <p>地标:<em>河南工业大学</em></p>
+                                    <p>公交:<em>B2路、B35路、B66路、45路、S150路、S152路
+                                        </em></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="Line_add_sites_div" style="display: none;">
+                        <ul class="Line_ck">
+                            <li>
+                                <div> <span class="pad01 w170">公务电话</span>
+                                    <p><em><a href="tel:0371-55161261">0371-55161261</a></em></p>
+                                </div>
+                            </li>
+                            <li>
+                                <div> <span class="pad02 w170">无障碍电梯</span>
+                                    <p>所在出入口：<em>A口</em></p>
+                                </div>
+                            </li>
+                            <li>
+                                <div> <span class="pad03 w170">卫生间</span>
+                                    <p>所在位置：<em>站台河南大学新区方向头端</em></p>
+                                </div>
+                            </li>
+                            <li>
+                                <div> <span class="pad04 w170">母婴室</span>
+                                    <p>所在位置：<em>站台河南大学新区方向头端</em></p>
+                                </div>
+                            </li>
+                            <li>
+                                <div> <span class="pad05 w170">AED</span>
+                                    <p>所在位置：<em>站厅临近E口；站台河南大学新区方向头端立柱后</em></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- 具体路线站点 -->
+    </div>
+    </div>
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?6d0df879f94899d091501c11c7ae9906";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <div class="footer_box" style=" border-top:0; margin-top:17px;">
+        <div class="footer">
+            <div class="footer_left">
+                <div class="tel">郑州地铁服务热线:<span>0371-55166166</span></div>
+                <ul>
+                    <li><a href="/">首页</a></li>
+                    <li><a href="/list/3">通知公告</a></li>
+                    <li><a href="/news">新闻中心</a></li>
+                    <li><a href="/page/6">乘客服务</a></li>
+                    <li><a href="/list/12">地铁票务</a></li>
+                    <li><a href="/lines/query/line">运营线路</a></li>
+                    <li style="display: none;"><a href="/list/21">地铁百科</a></li>
+                    <div class="clearfix"></div>
+                </ul>
+                <h1>Copyright © 2013-2016 www.zzmetro.com.All Rights Reserved<br>版权所有：郑州地铁集团有限公司运营分公司 <a
+                        href="https://beian.miit.gov.cn/" target="_blank"
+                        rel="nofollow">豫ICP备13021555号</a><br>郑州地铁热线电话：0371-55166166</h1>
+            </div>
+            <div class="footer_right"> <span><img src="/themes/zzmetro/Public/images/weixin_zixun.jpg">郑州地铁微信</span>
+                <span><img src="/themes/zzmetro/Public/images/weixin_ditie.jpg">郑州地铁资讯微信</span> <span><img
+                        src="/themes/zzmetro/Public/images/weibo_ditie.jpg">郑州地铁微博</span> </div>
+            <div class="clearfix"></div>
+        </div>
+    </div> <!-- 浮层 -->
+    <div class="fc_xt">
+        <ul>
+            <li id="go_home"><em class="fc_xt_icon02"></em><span>返回首页</span></li>
+            <li id="go_top"><em class="fc_xt_icon03"></em><span>返回顶部</span></li>
+            <li><em class="fc_xt_icon01"></em><span>0371-55166166</span></li>
+        </ul>
+    </div>
+    <style>
+        .ad {
+            position: fixed;
+            left: 0px;
+            z-index: 1000;
+            bottom: 148px;
+            width: 100px;
+            height: 220px;
+            border-radius: 0px 3px 5px 0px;
+            float: left;
+            background: url(/themes/zzmetro/Public/images/ad.png) no-repeat;
+        }
+
+        .ad a {
+            color: #fff;
+            line-height: 26px;
+            display: block;
+            width: 90px;
+            text-align: center;
+            vertical-align: middle;
+            margin-top: 60px;
+            font-size: 18px;
+        }
+    </style>
+    <div class="ad"> <a href="http://www.zzmetro.com/article/698">诚 &nbsp;物<br />征 &nbsp;资<br />生 &nbsp;供<br />产
+            &nbsp;应<br />性 &nbsp;商</a> </div> <!-- JavaScript -->
+    <script src="/Public/js/jquery.js"></script>
+    <script type="text/javascript" src="/themes/zzmetro/Public/js/common.js?v=20161216.1136"></script>
+    <script type="text/javascript" src="/themes/zzmetro/Public/js/chinese.js"></script>
+    <script type="text/javascript" src="/themes/zzmetro/Public/js/accessible.js"></script>
+    <script>
+        //简繁体转换
+        initChinese(document.querySelector("#chinese"), ["title"]);
+        //无障碍
+        initAccessible(document.querySelector("body"), document.querySelector("#accessible"));
+        //全局变量
+        var GV = {
+            DIMAUB: "/",
+            JS_ROOT: "public/js/",
+            TOKEN: ""
+        };
+    </script> <!-- Le javascript
+================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/Public/js/wind.js"></script>
+    <script src="/themes/zzmetro/Public/simpleboot/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/Public/js/frontend.js"></script>
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?6d0df879f94899d091501c11c7ae9906";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <style>
+        #panorama {
+            width: 100%;
+            height: 700px;
+        }
+    </style>
+    <script type="text/javascript" src="//api.map.baidu.com/api?v=2.0&ak=OGu1BwKyaUIDmXhetTPQfKpo2Oyn2S7O"></script>
+    <script type="text/javascript">    var map = new BMap.Map("panorama");    // 创建Map实例
+        //添加地图类型控件
+        map.addControl(new BMap.MapTypeControl({
+            mapTypes: [
+                BMAP_NORMAL_MAP,
+                BMAP_HYBRID_MAP
+            ]
+        }));
+        map.setCurrentCity("郑州");          // 设置地图显示的城市 此项是必须设置的
+        map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+
+        var marker = new BMap.Marker(new BMap.Point(113.548332, 34.833065));
+        var label = new BMap.Label("河南工业大学站", { offset: new BMap.Size(20, -10) });
+        map.addOverlay(marker);
+        marker.setLabel(label);
+        setTimeout(function () {
+            map.centerAndZoom(new BMap.Point(113.548332, 34.833065), 18);  // 初始化地图,设置中心点坐标和地图级别
+        }, 1000);
+
+        $('.site_ul li').on('click', function () {
+            var index = $(this).data('line');
+            lx(index);
+        });
+
+        $Line_add_site_div = $(".Line_add_sites_div");
+        $Line_add_site_div.eq(0).show();
+        $Line_site_teable_li = $("#Line_Site_table").find('li');
+
+        $Line_site_teable_li.on('mouseenter', function () {
+            $index = $(this).index();
+            $(this).addClass("on").siblings().removeClass("on");
+            $Line_add_site_div.hide();
+            $Line_add_site_div.eq($index).show();
+
+        });
+
+        //    $Line_site_teable_li.eq(0).addClass("on");
+
+
+        //线路新增
+        var lx_linum = $(".site_ul li").length;
+        var lx_ulw = ($(".site_ul li").width() + 18 + 2) * lx_linum;
+        $(".site_ul").css("width", lx_ulw);
+        var num = 1;
+        var divw = $(".site_ul_div").width();
+        var ulw = $(".site_ul").width();
+        var marginLeft;
+        $(".site_right_jt").click(function () {  //右箭头
+            console.log(ulw);
+            console.log(divw);
+            if (ulw < 2 * divw) {
+                marginLeft = -(ulw - divw);
+                $(".site_ul").animate({ marginLeft: marginLeft });
+            } else {
+                var bfb = ulw / divw;
+                var numlx = (parseInt(bfb) == bfb); //整数是true  小数  是false
+                var numzs = parseInt(bfb); //取整
+                if (numlx == false) { //小数
+                    if (num < numzs) {
+                        marginLeft = -divw * num;
+                        $(".site_ul").animate({ marginLeft: marginLeft });
+                        num++;
+                    } else {
+                        marginLeft = -divw * (num - 1) - (bfb - numzs) * divw;
+                        num = parseInt(bfb);
+                        $(".site_ul").animate({ marginLeft: marginLeft })
+                    }
+                }
+                if (numlx == true) { //整数
+                    if (num < numzs) {
+                        marginLeft = -divw * num;
+                        $(".site_ul").animate({ marginLeft: marginLeft });
+                        num++;
+                    } else {
+                        num = parseInt(bfb);
+                        marginLeft = -divw * (num - 1);
+                        $(".site_ul").animate({ marginLeft: marginLeft })
+                    }
+                }
+            }
+        });
+
+
+        $(".site_left_jt").click(function () {  //左箭头
+            if (num <= 1) {
+                marginLeft = 0;
+            } else {
+                marginLeft += divw;
+                num--;
+            }
+            $(".site_ul").animate({ marginLeft: marginLeft })
+
+        });
+
+        //线路新增 end
+
+
+        function lx(index) {
+            console.log(index);
+            $index = (typeof (index) == 'undefined') ? 0 : index;
+            $linediv = $('.Line_sites_div');
+            $licon = $('.line-' + $index);
+
+            if ($index < 10) {
+                $index = '0' + $index.toString();
+            }
+            $linediv.hide();
+            $licon.show();
+            $('.site_ul li').removeClass("on");
+            $('.site_ul li.color' + $index).addClass("on");
+
+            $licon.show();
+            var num = 1,
+                marginLeft = 0;
+            var lx_zd_linum; //li个数
+            var lx_zd_ulw; //ul 宽度
+            lx_zd_linum = $licon.children('ul').children("li").length; //站点个数
+            lx_zd_ulw = ($licon.children('ul').children("li").width() + 26) * lx_zd_linum;
+            $licon.children('ul').css("width", lx_zd_ulw);
+
+            var zd_ulw = $licon.children('ul').width(); //ul 宽
+            var numzd = 1;
+            var zd_divw = $licon.width();
+            var marginLeft_zd;
+
+            $licon.find('.site_cont_left_jt').on('click', function () {
+                if (lx_zd_linum < 16) {
+                    return false;
+                }
+                if (num <= 1) {
+                    marginLeft_zd = 0;
+                } else {
+                    marginLeft_zd += zd_divw;
+                    num--;
+                }
+                $licon.children('ul').animate({ marginLeft: marginLeft_zd })
+            });
+            $licon.find('.site_cont_right_jt').on('click', function () {
+                if (lx_zd_linum < 16) {
+                    return false;
+                }
+                if (zd_ulw < 2 * zd_divw) {
+                    marginLeft_zd = -(zd_ulw - zd_divw);
+                    $licon.children('ul').animate({ marginLeft: marginLeft_zd })
+                }
+                if (zd_ulw > 2 * zd_divw) {
+                    var bfb = zd_ulw / zd_divw;
+                    var numlx = (parseInt(bfb) == bfb); //整数是true  小数  是false
+                    var numzs = parseInt(bfb); //取整
+                    if (numlx == false) { //小数
+                        if (num < numzs) {
+                            marginLeft_zd = -zd_divw * num;
+                            $licon.children('ul').animate({ marginLeft: marginLeft_zd });
+                            num++;
+                        } else {
+                            marginLeft_zd = -zd_divw * (num - 1) - (bfb - numzs) * zd_divw;
+                            num = parseInt(bfb);
+                            $licon.children('ul').animate({ marginLeft: marginLeft_zd })
+                        }
+                    }
+                    if (numlx == true) { //整数
+                        if (num < numzs) {
+                            marginLeft_zd = -zd_divw * num;
+                            $licon.children('ul').animate({ marginLeft: marginLeft_zd });
+                            num++;
+                        } else {
+                            num = parseInt(bfb);
+                            marginLeft_zd = -zd_divw * (num - 1);
+                            $licon.children('ul').animate({ marginLeft: marginLeft_zd })
+                        }
+                    }
+                }
+            });
+        }
+
+        var line = 1;
+        lx(line);
+
+
+    </script>
+</body>
+
+</html>
