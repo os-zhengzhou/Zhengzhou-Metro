@@ -1,10 +1,10 @@
 const fs = require('fs');
 const path = require('path');
 
-const outputFile = 'LLM_MAP.md'
+const outputFile = 'README.md'
 
 function main() {
-  let mergedContent = '# LLM Map\n\n';
+  let mergedContent = '# 郑州地铁\n\n';
   let fileNames = []
 
   function readDirectory(dir) {
@@ -25,7 +25,7 @@ function main() {
   mergedContent += "## 线路\n\n"
   readDirectory('./线路');
   if (fileNames && fileNames.length > 0) {
-    mergedContent += fileNames.sort(customSort).map(line => `- ${line}`).join('\n')
+    mergedContent += fileNames.sort(customSort).map(line => `- [${line}]('./${line.replace('.md', '')}/${line}')`).join('\n')
   }
 
   fileNames = []
@@ -35,7 +35,7 @@ function main() {
   mergedContent += "## 站点\n\n"
   readDirectory('./站点');
   if (fileNames && fileNames.length > 0) {
-    mergedContent += fileNames.sort(customSort).map(line => `- ${line}`).join('\n')
+    mergedContent += fileNames.sort(customSort).map(station => `- [${station}]('./${station.replace('.md', '')}/${station}')`).join('\n')
   }
 
   fs.writeFileSync(outputFile, mergedContent, 'utf-8');
