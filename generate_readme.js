@@ -25,7 +25,7 @@ function main() {
   mergedContent += "## 线路\n\n"
   readDirectory('./线路');
   if (fileNames && fileNames.length > 0) {
-    mergedContent += fileNames.sort(customSort).map(line => `- [${line}]('./${line.replace('.md', '')}/${line}')`).join('\n')
+    mergedContent += fileNames.sort(customSort).map(line => `- [${line.replace('.md', '')}](/${line.replace('.md', '')}/${line})`).join('\n')
   }
 
   fileNames = []
@@ -35,7 +35,7 @@ function main() {
   mergedContent += "## 站点\n\n"
   readDirectory('./站点');
   if (fileNames && fileNames.length > 0) {
-    mergedContent += fileNames.sort(customSort).map(station => `- [${station}]('./${station.replace('.md', '')}/${station}')`).join('\n')
+    mergedContent += fileNames.sort(customSort).map(station => `- [${station.replace('.md', '')}](/${station.replace('.md', '')}/${station})`).join('\n')
   }
 
   fs.writeFileSync(outputFile, mergedContent, 'utf-8');
