@@ -1,13 +1,12 @@
 const qiniu = require('qiniu');
 const glob = require('glob');
 const path = require('path');
-const fs = require('fs');
 
 // 从环境变量中读取七牛云配置信息
 const accessKey = process.env.ACCESS_KEY;
 const secretKey = process.env.SECRET_KEY;
 const bucket = process.env.BUCKET_NAME;
-const localFolder = './jsons'; // 需要同步的本地文件夹路径
+const localFolder = path.join(process.cwd(), 'jsons'); // 需要同步的本地文件夹路径
 const remoteFolder = process.env.REMOTE_FOLDER; // 七牛云目标目录
 
 // 初始化七牛云配置
