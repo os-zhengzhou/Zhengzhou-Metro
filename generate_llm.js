@@ -3,7 +3,7 @@ const path = require('path');
 
 // 配置
 const directoryPath = './jsons'; // 你可以指定你的 JSON 文件所在的目录
-const outputFilePath = './llm_data.txt';
+const outputFilePath = './jsons/llm_data.txt';
 
 // 递归遍历目录，找到所有的 JSON 文件
 const getAllJsonFiles = (dir, fileList = []) => {

@@ -4,7 +4,8 @@
   "description": "郑州地铁信息汇总",
   "main": "generate_json.js",
   "scripts": {
-    "build": "node generate_json.js"
+    "build": "node generate_json.js",
+    "deploy": "node deploy_qiniu.js"
   },
   "repository": {
     "type": "git",
@@ -22,7 +23,9 @@
   },
   "homepage": "https://github.com/os-zhengzhou/Zhengzhou-Metro#readme",
   "dependencies": {
+    "glob": "^11.0.0",
     "markdown-it": "^14.1.0",
-    "markdown-it-container": "^4.0.0"
+    "markdown-it-container": "^4.0.0",
+    "qiniu": "^7.12.0"
   }
 }

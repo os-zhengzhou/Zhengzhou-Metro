@@ -21,10 +21,13 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Run script to parse Markdown and upload JSON
+    - name: Run script to parse Markdown
+      run: npm run build
+
+    - name: Upload to Qiniu
       env:
         QINIU_ACCESS_KEY: ${{ secrets.QINIU_ACCESS_KEY }}
         QINIU_SECRET_KEY: ${{ secrets.QINIU_SECRET_KEY }}
         QINIU_BUCKET_NAME: ${{ secrets.QINIU_BUCKET_NAME }}
         QINIU_UPLOAD_PATH: ${{ secrets.QINIU_UPLOAD_PATH }}
-      run: node script.js
+      run: npm run deploy
