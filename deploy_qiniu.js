@@ -1,8 +1,3 @@
-process.env.ACCESS_KEY = 'uRTV0i61GQ3jcIxpEufWRwdCX__PyM_ruQi4buiE';
-process.env.SECRET_KEY = 'CKEUqPn2rAJ9TYBRlrWhaHhOql47yGqPAYoFLwzq';
-process.env.BUCKET_NAME = 'xdbin';
-process.env.REMOTE_FOLDER = 'zz-metro';
-
 const qiniu = require('qiniu');
 const glob = require('glob');
 const path = require('path');
