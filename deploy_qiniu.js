@@ -46,9 +46,7 @@ function uploadFile(localFile, remoteFile) {
 const files = glob.sync(`${localFolder}/**/*`, { nodir: true });
 
 files.forEach(file => {
-  console.log(localFolder, file)
   const relativePath = path.relative(localFolder, file);
-  console.log(remoteFolder, relativePath)
   const remotePath = path.join(remoteFolder, relativePath).replace(/\\/g, '/');
   uploadFile(file, remotePath);
 });
